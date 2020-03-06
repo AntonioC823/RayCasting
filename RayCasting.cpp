@@ -83,8 +83,6 @@ int main()
 				sf::Vector2f intersection = rays[i].cast(walls[j].getX1(), walls[j].getY1(), walls[j].getX2(), walls[j].getY2());
 				if (rays[i].isIntersecting())
 				{
-					//sf::Vector2f intersection(intersection.x, intersection.y);
-
 					float distance = sqrt(pow(rays[i].getPositionX() - intersection.x, 2) + pow(rays[i].getPositionY() - intersection.y, 2));
 					if (distance < minDistance)
 					{
